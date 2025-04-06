@@ -1,4 +1,4 @@
-module protoc-gen-bson
+module protoc-gen-go-bson
 
 go 1.22
 
