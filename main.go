@@ -35,7 +35,7 @@ func main() {
 				if hasIdField {
 					typeName := message.GoIdent.GoName + "BSON"
 					g.P("type ", typeName, " struct {")
-					g.P("*", message.GoIdent.GoName)
+					g.P(message.GoIdent.GoName, "`bson:\",inline\"`")
 					for _, field := range message.Fields {
 						if field.GoName != "Id" {
 							continue
