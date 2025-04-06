@@ -1,10 +1,7 @@
-module protoc-gen-go-bson
+module github.com/herro-labs/protoc-gen-go-bson
 
 go 1.22
 
 toolchain go1.23.4
 
-require (
-	github.com/golang/protobuf v1.5.0
-	google.golang.org/protobuf v1.36.6
-)
+require google.golang.org/protobuf v1.36.6
